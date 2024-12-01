@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        
+        <title>Books</title>
+    </head>
+    <body>
+        <h1>My Books Collection</h1>
+        <p id="books1"></p>
+        <p id="author2"></p>
+        <p id="genre"></p>
+        <script>
+            let book = {"Books":
+                 [
+                    {
+                         "title":"The Great Gasby",
+                         "author":"F.Scott Fitgerald",
+                         "publication year":1925,
+                         "genres":["Fiction","Classic"]
+                     },
+
+                     {
+                         "title":"To Kill a Mockingbirdy",
+                         "author":"Harper Lee",
+                         "publication year":1960,
+                         "genres":["Fiction","Coming-of-Age"]
+                     }
+
+                ]
+                
+
+             }
+             let title = book.Books[0].title;
+             let author = book.Books[1].author;
+             console.log(title);
+             console.log(author);
+             document.getElementById("books1").innerHTML ="Book 1 Title: "+ title;
+
+             document.getElementById("author2").innerHTML ="Book 2 Author : "+ author;
+
+             document.getElementById("genre").innerHTML = "Available Genres : ";
+             for (let i = 0 ; i<2;i++){
+                let genre = book.Books[i].genres
+                console.log(genre);
+                document.getElementById("genre").innerHTML +=genre;
+                
+             }
+            
+             
+
+             
+
+
+            
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>

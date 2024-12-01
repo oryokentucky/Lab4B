@@ -1,0 +1,20 @@
+{
+    "Books":
+    [
+     {
+            "title":"The Great Gasby",
+            "author":"F.Scott Fitgerald",
+            "publication year":1925,
+            "genres":["Fiction","Classic"]
+        },
+
+        {
+            "title":"To Kill a Mockingbirdy",
+            "author":"Harper Lee",
+            "publication year":1960,
+            "genres":["Fiction","Coming-of-Age"]
+        }
+
+    ]
+
+}
